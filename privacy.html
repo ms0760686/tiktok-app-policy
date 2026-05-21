@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隱私權政策 | Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+  h1 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 16px; }
+  h2 { color: #222; margin-top: 32px; }
+  a { color: #0066cc; }
+  .updated { color: #888; font-size: 0.9em; }
+  .lang-switch { text-align: right; margin-bottom: 20px; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+  th { background: #f5f5f5; }
+</style>
+</head>
+<body>
+<div class="lang-switch"><a href="terms.html">Terms of Service</a></div>
+<h1>隱私權政策 Privacy Policy</h1>
+<p class="updated">最後更新 Last updated: 2026-05-21</p>
+
+<h2>1. 概述 Overview</h2>
+<p>本隱私權政策說明本應用程式（TikTok Content Posting API 應用）如何收集、使用及保護您的個人資訊。我們重視您的隱私，致力於透明化資料處理方式。</p>
+<p>This Privacy Policy describes how this application (TikTok Content Posting API application) collects, uses, and protects your personal information. We are committed to transparency in data handling.</p>
+
+<h2>2. 收集的資料 Data We Collect</h2>
+<table>
+  <tr><th>資料類型</th><th>說明</th><th>用途</th></tr>
+  <tr><td>TikTok Access Token</td><td>授權本應用程式代表您操作 TikTok API</td><td>影片上傳授權</td></tr>
+  <tr><td>影片檔案</td><td>您提供的 AI 生成影片（本地或 URL）</td><td>上傳至 TikTok</td></tr>
+  <tr><td>TikTok Publish ID</td><td>上傳後 TikTok 回傳的識別碼</td><td>追蹤上傳狀態</td></tr>
+</table>
+<p><strong>我們不收集：</strong> 密碼、個人識別資訊、瀏覽記錄、位置資料、或任何超出 API 操作必要範圍的資料。</p>
+<p><strong>We do NOT collect:</strong> passwords, personal identification data, browsing history, location data, or any data beyond what is necessary for API operations.</p>
+
+<h2>3. 資料使用方式 How We Use Data</h2>
+<p>收集的資料僅用於：</p>
+<ul>
+  <li>透過 TikTok Content Posting API 上傳影片至您的 TikTok 帳號</li>
+  <li>追蹤上傳狀態（publish_id）</li>
+  <li>Token 自動更新（如有提供 Refresh Token）</li>
+</ul>
+<p>我們不會將您的資料出售、出租或分享給任何第三方。</p>
+<p>We do not sell, rent, or share your data with any third parties. Data is used solely for the video upload functionality.</p>
+
+<h2>4. TikTok API 資料處理 TikTok API Data</h2>
+<p>本應用程式使用 TikTok Content Posting API。透過 API 傳輸的資料同時受 TikTok 隱私權政策約束：</p>
+<p><a href="https://www.tiktok.com/legal/page/row/privacy-policy/en" target="_blank">TikTok Privacy Policy</a></p>
+<p>本應用程式存取的 TikTok API 權限：</p>
+<ul>
+  <li><code>video.publish</code> — 代表您發布影片</li>
+  <li><code>video.upload</code> — 上傳影片至草稿匣</li>
+</ul>
+
+<h2>5. 資料儲存與安全 Data Storage &amp; Security</h2>
+<p>Access Token 及 Refresh Token 儲存於應用程式的本地設定檔（.env 檔案）中，不會上傳至任何外部伺服器。您有責任保護這些認證資訊的安全。</p>
+<p>Access Tokens are stored locally in the application configuration file. They are never transmitted to external servers beyond the official TikTok API endpoints.</p>
+
+<h2>6. 資料保留 Data Retention</h2>
+<p>應用程式不持久化儲存影片內容。影片上傳後，本地副本由您自行管理。TikTok 平台上的影片受 TikTok 的資料保留政策管轄。</p>
+<p>The application does not persistently store video content. Videos on the TikTok platform are governed by TikTok's data retention policies.</p>
+
+<h2>7. 使用者權利 Your Rights</h2>
+<p>您可以隨時撤銷本應用程式的 TikTok 授權，方法：TikTok 應用程式 → 設定 → 安全 → 已授權應用程式。</p>
+<p>You may revoke this application's TikTok authorization at any time: TikTok app → Settings → Security → Authorized Apps.</p>
+
+<h2>8. 政策變更 Policy Changes</h2>
+<p>本政策如有變更，將更新本頁面的「最後更新」日期。建議定期查看本頁面。</p>
+<p>If this policy changes, we will update the "Last updated" date on this page.</p>
+
+<h2>9. 聯絡資訊 Contact</h2>
+<p>隱私相關問題請聯絡：<a href="mailto:yc.pao@onelab.tw">yc.pao@onelab.tw</a></p>
+<p>For privacy-related inquiries, contact: <a href="mailto:yc.pao@onelab.tw">yc.pao@onelab.tw</a></p>
+</body>
+</html>
