@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="tiktok-developers-site-verification" content="l1sW6HfF4a3m9qYNYwpPYAFTyCgPqK4N" />
+<title>AI Video Publisher — TikTok Auto Upload Tool</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f9f9f9; color: #222; }
+  header { background: #000; color: #fff; padding: 40px 20px; text-align: center; }
+  header h1 { font-size: 2em; margin-bottom: 10px; }
+  header p { color: #aaa; font-size: 1.1em; }
+  .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  h2 { font-size: 1.3em; margin-bottom: 16px; color: #111; }
+  ul { padding-left: 20px; line-height: 2; }
+  .steps { counter-reset: step; list-style: none; padding: 0; }
+  .steps li { counter-increment: step; padding: 10px 0 10px 44px; position: relative; border-bottom: 1px solid #f0f0f0; }
+  .steps li:last-child { border: none; }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: 8px; width: 28px; height: 28px; background: #000; color: #fff; border-radius: 50%; text-align: center; line-height: 28px; font-size: .85em; font-weight: bold; }
+  .badge { display: inline-block; background: #f0f0f0; border-radius: 6px; padding: 2px 10px; font-size: .85em; font-family: monospace; margin: 2px; }
+  footer { text-align: center; padding: 32px 20px; color: #888; font-size: .9em; }
+  footer a { color: #555; }
+</style>
+</head>
+<body>
+<header>
+  <h1>AI Video Publisher</h1>
+  <p>Automated AI-generated video uploads to TikTok via Content Posting API</p>
+</header>
+<div class="container">
+  <div class="card">
+    <h2>應用程式說明 About This App</h2>
+    <p style="line-height:1.9">
+      AI Video Publisher 是一套 AI 影片自動化發布工具。它能將 AI 生成的短影音（透過 Kling 等 AI 影片生成服務產生）自動上傳至 TikTok 帳號。
+      上傳後影片先存入創作者草稿匣（Inbox），由帳號擁有者審核後手動發布，確保內容品質。
+    </p>
+    <p style="line-height:1.9; margin-top: 12px">
+      AI Video Publisher is an automation tool for publishing AI-generated short videos to TikTok.
+      It generates videos using AI services and uploads them to the creator's TikTok Inbox (draft mode) for manual review before publishing.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>工作流程 How It Works</h2>
+    <ol class="steps">
+      <li>使用 AI 影片生成服務（如 Kling AI）製作短影音內容</li>
+      <li>透過 TikTok Content Posting API 將影片上傳至創作者草稿匣</li>
+      <li>帳號擁有者在 TikTok 應用程式中審核草稿，確認後手動發布</li>
+      <li>追蹤 Publish ID 並記錄上傳結果</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>TikTok API 權限 Requested Permissions</h2>
+    <ul>
+      <li><span class="badge">video.upload</span> — 上傳影片至草稿匣 Upload video to creator inbox</li>
+      <li><span class="badge">video.publish</span> — 從草稿直接發布（選用）Direct post from draft (optional)</li>
+    </ul>
+    <p style="margin-top:16px; color:#666; font-size:.95em">
+      本應用程式僅代表帳號擁有者本人操作，不存取其他使用者資料。<br>
+      This app operates only on behalf of the account owner and does not access other users' data.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>資料安全 Data &amp; Privacy</h2>
+    <ul style="line-height:2">
+      <li>Access Token 僅儲存於本地設定檔，不上傳至第三方伺服器</li>
+      <li>影片內容不被本應用程式持久化儲存</li>
+      <li>不收集任何使用者個人識別資訊</li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <a href="terms.html">服務條款 Terms of Service</a> &nbsp;·&nbsp;
+  <a href="privacy.html">隱私權政策 Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="mailto:yc.pao@onelab.tw">yc.pao@onelab.tw</a>
+</footer>
+</body>
+</html>
